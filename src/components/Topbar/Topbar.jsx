@@ -1,12 +1,11 @@
-import React from "react";
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
-export const Topbar = () => {
+export default function Topbar() {
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
-                <span className="logo">ZeroHub</span>
+                <span className="logo">Zero Hub</span>
             </div>
             <div className="topbarCenter">
                 <div className="searchbar">
@@ -36,12 +35,8 @@ export const Topbar = () => {
                         <span className="topbarIconBadge">1</span>
                     </div>
                 </div>
-                <img
-                    src="/assets/person/4.jpeg"
-                    alt="asdsa"
-                    className="topbarImg"
-                />
+                <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
             </div>
         </div>
     );
-};
+}
